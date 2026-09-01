@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Update the domain below once the site is hosted -->
+<!-- Live domain -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.everwealthlegacy.in/</loc><priority>1.0</priority></url>
-  <url><loc>https://www.everwealthlegacy.in/about.html</loc></url>
-  <url><loc>https://www.everwealthlegacy.in/why-us.html</loc></url>
-  <url><loc>https://www.everwealthlegacy.in/will-drafting.html</loc></url>
-  <url><loc>https://www.everwealthlegacy.in/legacy-planning.html</loc></url>
-  <url><loc>https://www.everwealthlegacy.in/wealth-management.html</loc></url>
-  <url><loc>https://www.everwealthlegacy.in/financial-planning.html</loc></url>
-  <url><loc>https://www.everwealthlegacy.in/resources.html</loc></url>
-  <url><loc>https://www.everwealthlegacy.in/contact.html</loc></url>
-  <url><loc>https://www.everwealthlegacy.in/blog/what-is-a-will.html</loc></url>
-  <url><loc>https://www.everwealthlegacy.in/blog/registered-vs-unregistered-will.html</loc></url>
-  <url><loc>https://www.everwealthlegacy.in/blog/estate-planning-basics.html</loc></url>
-  <url><loc>https://www.everwealthlegacy.in/blog/five-will-mistakes.html</loc></url>
+  <url><loc>https://everwealthlegacy.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://everwealthlegacy.com/about.html</loc></url>
+  <url><loc>https://everwealthlegacy.com/why-us.html</loc></url>
+  <url><loc>https://everwealthlegacy.com/will-drafting.html</loc></url>
+  <url><loc>https://everwealthlegacy.com/legacy-planning.html</loc></url>
+  <url><loc>https://everwealthlegacy.com/wealth-management.html</loc></url>
+  <url><loc>https://everwealthlegacy.com/financial-planning.html</loc></url>
+  <url><loc>https://everwealthlegacy.com/resources.html</loc></url>
+  <url><loc>https://everwealthlegacy.com/contact.html</loc></url>
+  <url><loc>https://everwealthlegacy.com/blog/what-is-a-will.html</loc></url>
+  <url><loc>https://everwealthlegacy.com/blog/registered-vs-unregistered-will.html</loc></url>
+  <url><loc>https://everwealthlegacy.com/blog/estate-planning-basics.html</loc></url>
+  <url><loc>https://everwealthlegacy.com/blog/five-will-mistakes.html</loc></url>
 </urlset>

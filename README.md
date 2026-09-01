@@ -47,7 +47,7 @@ then visit http://localhost:8000
 ## Free hosting (pick one)
 * **Cloudflare Pages / Netlify**: drag-and-drop this folder in their dashboard → done (free SSL + CDN).
 * **GitHub Pages**: push this folder to a repo → Settings → Pages → deploy from branch.
-* Point your domain (e.g. everwealthlegacy.in) at it, then update the domain in `sitemap.xml` and `robots.txt`.
+* Point your domain (e.g. everwealthlegacy.com) at it, then update the domain in `sitemap.xml` and `robots.txt`.
 
 ## Before going live — checklist
 - [ ] Replace `assets/logo.svg` with the official logo (same filename = zero code changes)
