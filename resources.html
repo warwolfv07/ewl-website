@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resources — Blogs, Reels & Guides | Ever Wealth Legacy</title>
+<meta name="description" content="All Ever Wealth Legacy resources in one place — blog articles, YouTube shorts, Instagram reels and social posts on wills, wealth and legacy planning.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="resources">
+<div id="site-header"></div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Resources</div>
+    <h1>Resources</h1>
+    <p>Articles, videos and posts to help you understand wills, wealth and legacy planning.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="filter-tabs">
+      <button class="active" data-show="all">All</button>
+      <button data-show="blogs">Blog Articles</button>
+      <button data-show="social">Social Posts &amp; Reels</button>
+    </div>
+
+    <div id="blogsSection">
+      <div class="section-head"><span class="eyebrow">Read</span><br><h2>Blog Articles</h2></div>
+      <div class="res-grid" id="blogsGrid"></div>
+    </div>
+
+    <div id="socialSection" style="margin-top:70px">
+      <a id="social"></a>
+      <div class="section-head"><span class="eyebrow">Watch &amp; Follow</span><br><h2>Social Posts, Reels &amp; Shorts</h2></div>
+      <div class="res-grid" id="socialGrid"></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container cta-inner">
+    <div class="cta-left"><div class="phone-ico">&#9990;</div>
+      <div><h3>Have questions after reading?</h3><p>Our experts are one call away.</p></div></div>
+    <div class="cta-right"><a class="btn btn-gold" href="contact.html#consult">Book a Consultation</a></div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="js/include.js"></script>
+<script src="data/blogs.js"></script>
+<script src="data/social.js"></script>
+<script src="js/main.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  renderBlogsGrid("blogsGrid");
+  renderSocialGrid("socialGrid");
+  document.querySelectorAll(".filter-tabs button").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      document.querySelectorAll(".filter-tabs button").forEach(function (b) { b.classList.remove("active"); });
+      btn.classList.add("active");
+      var mode = btn.getAttribute("data-show");
+      document.getElementById("blogsSection").style.display = (mode === "social") ? "none" : "";
+      document.getElementById("socialSection").style.display = (mode === "blogs") ? "none" : "";
+    });
+  });
+});
+</script>
+</body>
+</html>

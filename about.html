@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — Ever Wealth Legacy</title>
+<meta name="description" content="Meet the team of lawyers, chartered accountants and financial planners behind Ever Wealth Legacy.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="about">
+<div id="site-header"></div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / About Us</div>
+    <h1>About Ever Wealth Legacy</h1>
+    <p>Wealth. Will. Legacy. — three promises we help every family keep.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container split">
+    <div class="reveal">
+      <span class="eyebrow">Our Story</span>
+      <h2>Helping families plan with clarity, care and confidence.</h2>
+      <p>Placeholder copy: describe how Ever Wealth Legacy started, the founders&rsquo; motivation, and the mission — making will drafting and legacy planning simple, affordable and dignified for every Indian family.</p>
+      <p>Placeholder copy: add your values (confidentiality, empathy, legal rigour), your service regions and anything that builds trust — registrations, affiliations, media mentions.</p>
+      <a class="btn btn-primary" href="contact.html#consult">Talk to Us</a>
+    </div>
+    <div class="split-art reveal" id="aboutMedia"><img src="assets/logo.svg" alt="" style="max-width:280px;filter:drop-shadow(0 10px 24px rgba(0,0,0,.35))"></div>
+  </div>
+</section>
+
+<section class="bg-cream">
+  <div class="container">
+    <div class="section-head"><span class="eyebrow">Our People</span><br><h2>Meet the Full Team</h2>
+      <p>To update this section, edit <b>data/team.js</b> — add a member, a photo and a short bio.</p></div>
+    <div class="team-grid" id="teamGridFull"></div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container cta-inner">
+    <div class="cta-left"><div class="phone-ico">&#9990;</div>
+      <div><h3>Let&rsquo;s plan your legacy together.</h3><p>Start with a free consultation.</p></div></div>
+    <div class="cta-right"><a class="btn btn-gold" href="contact.html#consult">Book a Consultation</a></div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="js/include.js"></script>
+<script src="data/team.js"></script>
+<script src="js/main.js"></script>
+<script>
+/* Optional section image: e.g. var SECTION_IMAGE = "assets/our-office.jpg"; ("" = logo placeholder) */
+var SECTION_IMAGE = "";
+document.addEventListener("DOMContentLoaded", function () {
+  applyMedia("aboutMedia", SECTION_IMAGE, "split");
+  renderTeam("teamGridFull");
+});
+</script>
+</body>
+</html>

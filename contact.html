@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us / Book a Consultation — Ever Wealth Legacy</title>
+<meta name="description" content="Book a free consultation with Ever Wealth Legacy. Tell us your requirement and our experts will reach out to you.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="contact">
+<div id="site-header"></div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Contact Us</div>
+    <h1>Book a Consultation</h1>
+    <p>Tell us a little about your requirement and our experts will reach out within one working day.</p>
+  </div>
+</section>
+
+<section id="consult">
+  <div class="container contact-layout">
+    <div class="form-wrap reveal">
+      <h2 style="margin-bottom:6px">Tell Us About Your Requirement</h2>
+      <p style="color:var(--muted);font-size:.92rem;margin-bottom:24px">Fields marked <span style="color:#c0392b">*</span> are required. Your details stay confidential.</p>
+      <form id="leadForm" novalidate>
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="f-name">Full Name <span class="req">*</span></label>
+            <input id="f-name" name="name" type="text" required placeholder="Your name">
+          </div>
+          <div class="form-field">
+            <label for="f-phone">Phone Number <span class="req">*</span></label>
+            <input id="f-phone" name="phone" type="tel" required placeholder="+91 XXXXX XXXXX">
+          </div>
+          <div class="form-field">
+            <label for="f-email">Email</label>
+            <input id="f-email" name="email" type="email" placeholder="you@example.com">
+          </div>
+          <div class="form-field">
+            <label for="f-service">Service You&rsquo;re Interested In</label>
+            <select id="f-service" name="service">
+              <option value="Not sure yet">Not sure yet — need guidance</option>
+              <option>Will Drafting</option>
+              <option>Legacy Planning</option>
+              <option>Wealth Management</option>
+              <option>Financial Planning</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-field full">
+            <label for="f-msg">Brief Requirement <span class="req">*</span></label>
+            <textarea id="f-msg" name="message" required placeholder="e.g. I want to draft a will covering my house and investments..."></textarea>
+          </div>
+          <!-- honeypot: hidden from humans, bots fill it -->
+          <div class="hp-field" aria-hidden="true"><label>Company<input name="company" tabindex="-1" autocomplete="off"></label></div>
+        </div>
+        <div style="margin-top:22px;display:flex;gap:14px;align-items:center;flex-wrap:wrap">
+          <button type="submit" class="btn btn-gold">Submit Request</button>
+          <span class="form-note">By submitting, you agree to be contacted by our team.</span>
+        </div>
+        <div id="formStatus" class="form-status" role="status"></div>
+      </form>
+    </div>
+
+    <aside class="info-card reveal">
+      <h3>Reach Us Directly</h3>
+      <ul id="contactInfoList"></ul>
+      <div class="map-placeholder">&#128205; Google Map embed placeholder — paste your map iframe here once the office address is final.</div>
+    </aside>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="js/include.js"></script>
+<script src="js/main.js"></script>
+<script src="js/form.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var c = EWL.config;
+  document.getElementById("contactInfoList").innerHTML =
+    '<li><span class="ico">&#9906;</span><span>' + c.address + '</span></li>' +
+    '<li><span class="ico">&#9990;</span><a href="tel:' + c.phoneHref + '">' + c.phone + '</a></li>' +
+    '<li><span class="ico">&#9993;</span><a href="mailto:' + c.email + '">' + c.email + '</a></li>' +
+    '<li><span class="ico">&#128337;</span><span>' + c.hours + '</span></li>' +
+    '<li><span class="ico">&#128172;</span><a href="https://wa.me/' + c.whatsapp + '" target="_blank" rel="noopener">Chat on WhatsApp</a></li>';
+});
+</script>
+</body>
+</html>
