@@ -4,7 +4,7 @@
       Google Apps Script from google-apps-script/Code.gs and deploy it.
    2. Paste the deployed Web App URL below.
    ===================================================================== */
-var GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwm5mrSVY-lpNZZSbLNFeypTHekcLJN_YELyhXVhQRalGlr0Iy2rRtgpAE5ojuTku-j/exec";
+var GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyQdxpGBRNlf9AGdIe8iRpas64MmYjwE_lieUsagQe9d4LAX8iDuDGIW_iRzJn9MSOf/exec";
 
 document.addEventListener("DOMContentLoaded", function () {
   var form = document.getElementById("leadForm");
