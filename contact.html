@@ -36,22 +36,22 @@
           </div>
           <div class="form-field">
             <label for="f-phone">Phone Number <span class="req">*</span></label>
-            <input id="f-phone" name="phone" type="tel" required placeholder="+91 XXXXX XXXXX">
+            <input id="f-phone" name="phone" type="tel" required placeholder="e.g. +XX XXXXX XXXXX (with country code)" maxlength="20">
           </div>
           <div class="form-field">
             <label for="f-email">Email</label>
             <input id="f-email" name="email" type="email" placeholder="you@example.com">
           </div>
-          <div class="form-field">
-            <label for="f-service">Service You&rsquo;re Interested In</label>
-            <select id="f-service" name="service">
-              <option value="Not sure yet">Not sure yet — need guidance</option>
-              <option>Will Drafting</option>
-              <option>Legacy Planning</option>
-              <option>Wealth Management</option>
-              <option>Financial Planning</option>
-              <option>Other</option>
-            </select>
+          <div class="form-field full">
+            <label>Services You&rsquo;re Interested In <span style="font-weight:400;color:var(--muted)">(select all that apply)</span></label>
+            <div class="checks">
+              <label class="check"><input type="checkbox" name="services" value="Will Drafting"> Will Drafting</label>
+              <label class="check"><input type="checkbox" name="services" value="Legacy Planning"> Legacy Planning</label>
+              <label class="check"><input type="checkbox" name="services" value="Wealth Management"> Wealth Management</label>
+              <label class="check"><input type="checkbox" name="services" value="Financial Planning"> Financial Planning</label>
+              <label class="check"><input type="checkbox" name="services" value="Not sure yet - need guidance"> Not sure yet &mdash; need guidance</label>
+              <label class="check"><input type="checkbox" name="services" value="Other"> Other</label>
+            </div>
           </div>
           <div class="form-field full">
             <label for="f-msg">Brief Requirement <span class="req">*</span></label>

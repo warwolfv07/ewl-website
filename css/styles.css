@@ -44,7 +44,7 @@ section{padding:70px 0}
 .main-nav{display:flex;align-items:center;gap:6px}
 .main-nav>ul{display:flex;list-style:none;gap:2px;align-items:center}
 .main-nav a{display:block;padding:10px 13px;color:var(--ink);font-weight:500;font-size:.92rem;border-bottom:2px solid transparent}
-.main-nav a:hover,.main-nav a.active{color:var(--gold);border-bottom-color:var(--gold)}
+.main-nav a:not(.btn):hover,.main-nav a.active{color:var(--gold);border-bottom-color:var(--gold)}
 .has-drop{position:relative}
 .has-drop>a::after{content:" ▾";font-size:.7em}
 .dropdown{position:absolute;top:100%;left:0;background:#fff;min-width:230px;box-shadow:var(--shadow);border-radius:0 0 10px 10px;list-style:none;opacity:0;visibility:hidden;transform:translateY(8px);transition:.25s;border-top:3px solid var(--gold)}
@@ -301,3 +301,16 @@ body.nav-open{overflow:hidden}
   .split-art.as-photo img{min-height:240px}
   .brand svg,.brand img{height:44px}
 }
+/* Button hover contrast: text always white on gold, incl. the nav CTA */
+.main-nav .btn-gold:hover{color:#fff;border-bottom-color:transparent}
+.btn-gold:hover,.btn-outline:hover{color:#fff}
+/* Service checkbox list */
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.check{display:flex;align-items:center;gap:9px;padding:11px 12px;border:1px solid var(--line);border-radius:8px;background:var(--cream);cursor:pointer;font-size:.88rem;font-weight:500;color:var(--ink);transition:.2s}
+.check input{accent-color:var(--gold);width:17px;height:17px;flex:0 0 auto;margin:0}
+.check:hover{border-color:var(--gold)}
+.check:has(input:checked){background:#fff;border-color:var(--gold);box-shadow:0 0 0 2px rgba(184,134,59,.18)}
+/* Field validation states */
+.form-field input.invalid,.form-field textarea.invalid{border-color:#c0392b;background:#fdf5f5}
+.err-msg{display:none;color:#c0392b;font-size:.78rem;margin-top:2px}
+@media(max-width:560px){.checks{grid-template-columns:1fr}}
