@@ -42,7 +42,7 @@ then visit http://localhost:8000
 4. Copy the Web App URL and paste it into `js/form.js` as `GOOGLE_SCRIPT_URL`.
 5. Test the form — a "Leads" tab appears with Timestamp, Name, Phone, Email, Service, Message, Page, Status. Share the Sheet with your team.
 
-> Tip: in the Sheet use **Tools → Notification settings** to get an email whenever a new lead arrives.
+> Email alerts: set `NOTIFY_EMAILS` at the top of `Code.gs` — every submission emails the lead details instantly to those addresses (run `testEmailAlert` once in the Apps Script editor to grant the mail permission, then deploy a New version).
 
 ## Free hosting (pick one)
 * **Cloudflare Pages / Netlify**: drag-and-drop this folder in their dashboard → done (free SSL + CDN).
