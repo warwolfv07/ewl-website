@@ -6,11 +6,11 @@
 window.EWL = window.EWL || {};
 
 EWL.config = {
-  phone: "+91 98765 43210",              // display phone number
-  phoneHref: "+919619823373",            // tel: link (no spaces)
-  whatsapp: "919876543210",              // WhatsApp number (country code, digits only)
+  phone: "+91 9773995449",              // display phone number
+  phoneHref: "+919773995449",            // tel: link (no spaces)
+  whatsapp: "+919773995449",              // WhatsApp number (country code, digits only)
   email: "info@everwealthlegacy.com",
-  address: "201, Placeholder Business Park, MG Road, Pune, Maharashtra 411001, India",
+  address: "201, PB Park Park, Noida, Ghaziabad 201301, India",
   hours: "Mon – Sat: 10:00 AM – 7:00 PM",
   social: {
     facebook:  "https://facebook.com/",
