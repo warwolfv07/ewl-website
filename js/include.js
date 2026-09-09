@@ -10,7 +10,7 @@ EWL.config = {
   phoneHref: "+919773995449",            // tel: link (no spaces)
   whatsapp: "+919773995449",              // WhatsApp number (country code, digits only)
   email: "info@everwealthlegacy.com",
-  address: "201, PB Park Park, Noida, Ghaziabad 201301, India",
+  address: "201, PB Park, Noida,201301, India",
   hours: "Mon – Sat: 10:00 AM – 7:00 PM",
   social: {
     facebook:  "https://facebook.com/",
