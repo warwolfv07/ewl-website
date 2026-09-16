@@ -8,11 +8,11 @@
    ===================================================================== */
 window.EWL_BLOGS = [
    {
-    title: "Planning in India: Why Every Family Needs a Will to Protect Their Legacy Blog",
+    title: "Planning in India: Why Every Family Needs a Will to Protect Their Legacy",
     date: "Sept 2026",
     tag: "Will Basics",
     excerpt: "A simple guide to what a will covers, what happens without one, and how to get started. (Placeholder post.)",
-    link: "blog//Planning in India: Why Every Family Needs a Will to Protect Their Legacy Blog.html",
+    link: "blog//Planning in India: Why Every Family Needs a Will to Protect Their Legacy.html",
     image: ""
   },
   {
